@@ -1,0 +1,121 @@
+CREATE TABLE students(
+    ID int,
+    Name varchar(100),
+    Born varchar(50),
+    Things varchar(100)
+);
+
+INSERT INTO students VALUES (
+    2,
+    "Jose Luis Rodriguez Martinez",
+    "1 de julio",
+    "POT 3>"
+);
+INSERT INTO students VALUES (
+    3,
+    "Luis Fernando Gomez Maldonado",
+                        "20 de octubre",
+                         "es el liche"
+);
+INSERT INTO students VALUES (
+    4,
+    "Bryan de Jesus Olvares Gomez",
+                    "5 de octubre",
+                    "topo"
+);
+INSERT INTO students VALUES (
+    5,
+    "Christian Medina Velazquez",
+                    "22 de septiembre",
+                    "FRI FAIR <3"
+);
+INSERT INTO students VALUES (
+    6,
+     "Angel Uriel Luevano Saavedra",
+                    "21 de noviembre",
+                    "nose xd"
+);
+INSERT INTO students VALUES (
+    7,
+    "Jennifer Soto Nuñez",
+                    "nose alrato",
+                    "tampoco se"
+);
+INSERT INTO students VALUES (
+    8,
+    "Jaqceline Soto Ramos",
+                    "nose alrato",
+                    "tampoco se"
+);
+INSERT INTO students VALUES (
+    9,
+    "Cythia Jacqueline Torres Hernandez",
+                    "nose alrato",
+                    "tampoco se"
+);
+INSERT INTO students VALUES (
+    10,
+    "Laura Estefania Monsterrat Yepez Mondragon",
+                    "no se",
+                    "tampoco xd"
+);
+INSERT INTO students VALUES (
+    11,
+    "JOse Maria Arenas Lizcano",
+                    "no se",
+                    "tampoco xd"
+);
+INSERT INTO students VALUES (
+    12,
+    "Josue Patricio Hernandez Cruz",
+                    "Cumple el 5 de marzo",
+                    "- Jugar videojuegos\n- Comer\n- Jugar Basquet"
+);
+INSERT INTO students VALUES (
+    13,
+    "Luis Angel Morales Losoyo",
+                    "22 de julio",
+                    "- JUEGAR"
+);
+INSERT INTO students VALUES (
+    14,
+    "Brandon Isay Rocha Delgado",
+                    "Cumple el 20 de marzo",
+                    "- Ver anime\n- Videojuegos\n- Tacos\n- Dibujar"
+);
+INSERT INTO students VALUES (
+    15,
+    "Laura Paulina Rodriguez Torres",
+                    "CUmple el 19 de agosto",
+                    "- Dibujar\n- Ver tele\n- Jugar\n- Platicar"
+);
+INSERT INTO students VALUES (
+    16,
+    "Braulio Zamarron Hernandez",
+                    "Cumple el 2 de Julio",
+                    "- JUgar futbol\n- Videojuegos\n- Correr\n- Comer\n- Romper lapices"
+);
+INSERT INTO students VALUES (
+    17,
+    "Giovanna Sofia Espinoza Rojas",
+                    "no se",
+                    "tampoco xd"
+);
+INSERT INTO students VALUES (
+    18,
+     "Mariana Rios Garcia",
+                    "no se",
+                    "tampoco xd"
+);
+INSERT INTO students VALUES (
+    19,
+    "Angel de Jesus Cruz Sandoval",
+                    "Cumple el 30 de septiembre",
+                    "- Dibujar\n- Espaguetti\n- Anime\n- Videojuegos"
+);
+INSERT INTO students VALUES (
+    20,
+    "Dilan Geancarlo Rocha Delgado",
+                    "Cumple el 3 de marzo",
+                    "- Ver anime\n- Videojuegos\n- Dibujar\n- Comer tamales"
+);
