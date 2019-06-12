@@ -57,6 +57,11 @@ p {
   margin: 10px;
 }
 
+img {
+  width: 175px;
+  height: 200px;
+}
+
 .card-name {
   font-size: 20px;
 }
