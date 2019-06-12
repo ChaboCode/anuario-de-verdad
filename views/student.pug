@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1 #{Name}
-  p #{Born}
+  div#container
+    div#timeline
+      p.group-title #{Name}
+      div.bio-image
+        img(src=Image)
+      h2 Cumple años el #{Born}
+      h3 Le gusta:
+      p #{Things}

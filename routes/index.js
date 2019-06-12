@@ -4,7 +4,37 @@ const sqlite3 = require('sqlite3').verbose()
 
 /* GET home page. */
 router.get('/',(req, res, next) => {
-  res.render('index', { title: 'Express' });
+   //Conects to the database
+   let db = new sqlite3.Database('/home/sans/sqlite3/anuario2.db', err => {
+    if (err) {
+      return console.error(err.message)
+    }
+    console.log('Connected to the main SQLite database')
+  })
+
+  //query
+  let query = `SELECT ID, Name FROM 'students'`
+  let Name, ID
+  db.all(query, (err, rows) => {
+    if(err){
+      return console.error(err.message)
+    }
+    if(rows){
+      let names = ['Saul Chavez Sanchez']
+      rows.forEach(i => {
+        names.push(i.Name)
+      })
+      res.render('index', {names: names})
+    }
+  })
+
+  //Disconect
+  db.close(err => {
+    if (err){
+      return console.error(err.message)
+    }
+    console.log('Close the database connection')
+  })
 });
 
 /* GET users listing. */
@@ -30,6 +60,11 @@ router.get('/student', function(req, res, next) {
       Things = row.Things
       console.log(Name + Born + Things)
     }
+    res.render('student', {
+      Name: Name,
+      Born: Born,
+      Things: Things
+    })
   })
 
   //Disconect
@@ -38,12 +73,6 @@ router.get('/student', function(req, res, next) {
       return console.error(err.message)
     }
     console.log('Close the database connection')
-  })
-
-  //render
-  res.render('student', {
-    Name: Name,
-    Born: Born,
   })
 })
 
